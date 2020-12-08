@@ -27,5 +27,8 @@ def predicts():
         price = float(df[df['Item Name'] == item]['price'])
         price = "Price of %s is ₹ %.2f"%(item,price)
         return render_template('index.html',data = str(price))
+    
+    
 
-app.run()
+if __name__ == '__main__':
+    app.run()
